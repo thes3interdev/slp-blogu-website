@@ -1,0 +1,16 @@
+{
+	"hosting": {
+		"public": "host",
+		"target": "faas",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"rewrites": [
+			{
+				"source": "**",
+				"run": {
+					"serviceId": "slp-blogu-website",
+					"region": "europe-west1"
+				}
+			}
+		]
+	}
+}

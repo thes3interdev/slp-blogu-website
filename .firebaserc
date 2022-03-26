@@ -1,0 +1,14 @@
+{
+	"projects": {
+		"default": "slp-blogu-website"
+	},
+	"targets": {
+		"slp-blogu-website": {
+			"hosting": {
+				"faas": [
+					"slp-blogu-website"
+				]
+			}
+		}
+	}
+}
