@@ -37,7 +37,7 @@ options:
   substitutionOption: 'ALLOW_LOOSE'
   # machineType: 'E2_HIGHCPU_8'
 substitutions:
-  _DEPLOY_REGION: europe-west3
+  _DEPLOY_REGION: europe-west1
   _GCR_HOSTNAME: eu.gcr.io
   _PLATFORM: managed
-  _SERVICE_NAME: <strapi-starter-stage>
+  _SERVICE_NAME: slp-blogu-website
