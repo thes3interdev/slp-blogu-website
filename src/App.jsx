@@ -3,6 +3,7 @@ import { ApolloProvider } from '@apollo/client';
 import client from './utilities/UtilityApolloClient';
 import PageHome from './pages/PageHome';
 import PageContacts from './pages/PageContacts';
+import PageArticle from './pages/PageArticle';
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 			<ApolloProvider client={client}>
 				<Routes>
 					<Route path="/" element={<PageHome />} />
+					<Route path="/articles/:slug" element={<PageArticle />} />
 					<Route path="/contacts" element={<PageContacts />} />
 				</Routes>
 			</ApolloProvider>
