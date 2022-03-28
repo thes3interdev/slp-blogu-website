@@ -10,6 +10,6 @@
 	}
 
 	body {
-		@apply mt-[79px] font-ubuntu text-slate-800 antialiased lg:mt-[89px];
+		@apply mt-[70px] font-ubuntu text-slate-800 antialiased;
 	}
 }
