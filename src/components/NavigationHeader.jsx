@@ -12,8 +12,8 @@ const NavigationHeader = () => {
 	const handleClose = () => setIsMenuOpen(!isMenuOpen);
 
 	return (
-		<div className="fixed inset-x-0 top-0 bg-sky-800">
-			<div className="mx-auto px-4 py-5 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+		<nav className="fixed inset-x-0 top-0 bg-sky-800">
+			<div className="mx-auto max-w-7xl px-3 py-5">
 				<div className="relative flex items-center justify-between">
 					<Link to="/" className="inline-flex items-center">
 						<span className="ml-2 text-xl font-semibold uppercase tracking-wide text-slate-100">
@@ -21,13 +21,10 @@ const NavigationHeader = () => {
 						</span>
 					</Link>
 
-					<ul className="hidden items-center space-x-8 lg:flex">
+					<ul className="hidden items-center space-x-8 text-slate-100 lg:flex">
 						{navigationLinks.map((link) => (
 							<li key={link.name}>
-								<Link
-									to={link.link}
-									className="font-medium tracking-wide text-slate-100 "
-								>
+								<Link to={link.link} className="tracking-wide">
 									{link.name}
 								</Link>
 							</li>
@@ -90,7 +87,7 @@ const NavigationHeader = () => {
 													<Link
 														onClick={handleClose}
 														to={link.link}
-														className="font-medium tracking-wider"
+														className="text-lg font-semibold tracking-wider"
 													>
 														{link.name}
 													</Link>
@@ -104,7 +101,7 @@ const NavigationHeader = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
