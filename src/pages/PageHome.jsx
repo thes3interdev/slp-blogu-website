@@ -3,7 +3,7 @@ import HomepageQuery from '../graphql/queries/HomepageQuery';
 import UtilityTabTitle from '../utilities/UtilityTabTitle';
 
 const PageHome = () => {
-	UtilityTabTitle('Blogu Home Page | Superior Software Solutions');
+	UtilityTabTitle('Blogu Home | Superior Software Solutions');
 
 	return (
 		<div>
