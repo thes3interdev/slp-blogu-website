@@ -1,6 +1,8 @@
 import Query from '../components/QueryGQL';
 import HomepageQuery from '../graphql/queries/HomepageQuery';
+import ArticlesQuery from '../graphql/queries/ArticlesQuery';
 import UtilityTabTitle from '../utilities/UtilityTabTitle';
+import DisplayCardArticles from '../components/DisplayCardArticles';
 
 const PageHome = () => {
 	UtilityTabTitle('Blogu Home | Superior Software Solutions');
@@ -24,7 +26,7 @@ const PageHome = () => {
 								className="h-96 w-full bg-cover bg-center bg-no-repeat"
 								style={{ backgroundImage: `url(${homepageHeroImage})` }}
 							>
-								<div className="flex h-full w-full items-center justify-center bg-slate-900 bg-opacity-50">
+								<div className="flex h-full w-full items-center justify-center bg-slate-900/50">
 									<div className="text-center">
 										<h1 className="mb-2 text-2xl font-semibold uppercase text-slate-100 lg:text-3xl">
 											{homepageTitle}
@@ -40,6 +42,14 @@ const PageHome = () => {
 					);
 				}}
 			</Query>
+
+			{/** article cards display start */}
+			<Query query={ArticlesQuery}>
+				{({ data: { articles } }) => {
+					return <DisplayCardArticles articles={articles.data} />;
+				}}
+			</Query>
+			{/** article cards display end */}
 		</div>
 	);
 };

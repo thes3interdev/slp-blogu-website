@@ -1,13 +1,14 @@
 import { gql } from '@apollo/client';
 
-const ContactpageQuery = gql`
-	query Contactpage {
-		contactPage {
+const ArticlesQuery = gql`
+	query Articles {
+		articles {
 			data {
 				attributes {
 					title
-					subtitle
-					hero_image {
+					slug
+					excerpt
+					featured_image {
 						data {
 							attributes {
 								url
@@ -20,4 +21,4 @@ const ContactpageQuery = gql`
 	}
 `;
 
-export default ContactpageQuery;
+export default ArticlesQuery;
