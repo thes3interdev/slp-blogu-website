@@ -13,3 +13,13 @@
 		@apply mt-[70px] font-ubuntu text-slate-800 antialiased;
 	}
 }
+
+@layer components {
+	.action-button {
+		@apply inline-flex h-12 w-full items-center justify-center rounded bg-emerald-800 px-6 font-medium uppercase tracking-wide text-slate-100 transition duration-200 hover:bg-emerald-500 focus:outline-none;
+	}
+
+	.display-card-title {
+		@apply mb-3 inline-block text-xl font-bold uppercase leading-5 text-sky-800 transition-colors duration-300 line-clamp-1 hover:text-sky-500;
+	}
+}

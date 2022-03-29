@@ -3,8 +3,15 @@ import { useQuery } from '@apollo/client';
 const Query = ({ children, query, slug }) => {
 	const { data, loading, error } = useQuery(query, { variables: { slug: slug } });
 
-	if (loading) return <p>loading...</p>;
-	if (error) return <p>Error: (JSON.stringify(error))</p>;
+	if (loading)
+		return <p className="flex h-screen items-center justify-center">loading...</p>;
+
+	if (error)
+		return (
+			<p className="flex h-screen items-center justify-center text-red-500">
+				Error: (JSON.stringify(error))
+			</p>
+		);
 
 	return children({ data });
 };

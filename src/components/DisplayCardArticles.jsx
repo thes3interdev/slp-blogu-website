@@ -31,14 +31,14 @@ const DisplayCardArticles = ({ articles }) => {
 									<div className="border border-t-0 p-5">
 										<Link
 											to={`/articles/${article.attributes.slug}`}
-											className="mb-3 inline-block text-2xl font-bold uppercase leading-5 text-sky-800 transition-colors duration-300 line-clamp-1 hover:text-sky-500"
+											className="display-card-title"
 										>
 											{article.attributes.title}
 										</Link>
 										<p className="mb-2 line-clamp-3">{article.attributes.excerpt}</p>
 										<Link
 											to={`/articles/${article.attributes.slug}`}
-											className="inline-flex h-12 w-full items-center justify-center rounded bg-emerald-800 px-6 font-medium uppercase tracking-wide text-slate-100 transition duration-200 hover:bg-emerald-500 focus:outline-none"
+											className="action-button"
 										>
 											Learn More
 										</Link>
