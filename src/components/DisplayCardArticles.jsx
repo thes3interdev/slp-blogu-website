@@ -8,9 +8,10 @@ const DisplayCardArticles = ({ articles }) => {
 				<div className="text-center">
 					<h2 className="text-3xl font-bold">Trusted by Developers Around The World</h2>
 					<p className="py-5 text-xl">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur
-						asperiores nostrum corporis harum. Exercitationem architecto minus vero esse
-						quas vel.
+						These are blogs that have been written by individuals who have demonstrated
+						their capabilities by satisfying our requirements for building apps on major
+						developer platforms and have years of hands on experience with both large and
+						small projects alike. We recommend them without reservation.
 					</p>
 				</div>
 			</div>
