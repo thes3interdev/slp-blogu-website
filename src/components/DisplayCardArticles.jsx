@@ -7,11 +7,10 @@ const DisplayCardArticles = ({ articles }) => {
 			<div className="mx-auto max-w-6xl">
 				<div className="text-center">
 					<h2 className="text-3xl font-bold">Trusted by Developers Around The World</h2>
-					<p className="py-5 text-xl">
-						These are blogs that have been written by individuals who have demonstrated
-						their capabilities by satisfying our requirements for building apps on major
-						developer platforms and have years of hands on experience with both large and
-						small projects alike. We recommend them without reservation.
+					<p className="py-5 text-lg">
+						These are blogs that have been written by individuals who have demonstrated their capabilities by satisfying
+						our requirements for building apps on major developer platforms and have years of hands on experience with
+						both large and small projects alike. We recommend them without reservation.
 					</p>
 				</div>
 			</div>
@@ -30,17 +29,11 @@ const DisplayCardArticles = ({ articles }) => {
 										alt={article.attributes.title}
 									/>
 									<div className="border border-t-0 p-5">
-										<Link
-											to={`/articles/${article.attributes.slug}`}
-											className="display-card-title"
-										>
+										<Link to={`/articles/${article.attributes.slug}`} className="display-card-title">
 											{article.attributes.title}
 										</Link>
 										<p className="mb-2 line-clamp-3">{article.attributes.excerpt}</p>
-										<Link
-											to={`/articles/${article.attributes.slug}`}
-											className="action-button"
-										>
+										<Link to={`/articles/${article.attributes.slug}`} className="action-button">
 											Learn More
 										</Link>
 									</div>

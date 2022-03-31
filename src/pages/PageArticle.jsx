@@ -40,15 +40,15 @@ const PageArticle = () => {
 							{/** hero section end */}
 
 							{/** content section start */}
-							<section className="mx-auto max-w-3xl px-4 pt-8 pb-16">
+							<section className="mx-auto max-w-3xl px-2 pt-8 pb-16">
 								{/** content section - excerpt start */}
-								<h3 className="px-3 pb-6 text-center">{articles.data[0].attributes.excerpt}</h3>
+								<h3 className="px-3 pb-6 text-center text-lg">{articles.data[0].attributes.excerpt}</h3>
 								{/** content section - excerpt end */}
 
-								<hr className="" />
+								<hr />
 
 								{/** content section - top author name plate start */}
-								<div className="flex items-center justify-between py-4">
+								<div className="flex items-center justify-between py-4 px-3">
 									<div className="flex items-center space-x-3">
 										<img
 											src={articles.data[0].attributes.author.data.attributes.image.data.attributes.url}
@@ -99,7 +99,7 @@ const PageArticle = () => {
 								<hr />
 
 								{/** content section - content start */}
-								<div className="mx-auto max-w-3xl transform space-y-5 px-4 pt-6 sm:px-6 lg:px-8 lg:pt-16 lg:pb-8">
+								<div className="mx-auto max-w-3xl transform space-y-5 px-3 pt-8 pb-8">
 									<div
 										dangerouslySetInnerHTML={{ __html: articles.data[0].attributes.content }}
 										className="prose max-w-none prose-headings:text-sky-800 prose-a:text-blue-800"
@@ -110,7 +110,7 @@ const PageArticle = () => {
 								<hr />
 
 								{/** content section - bottom author name plate start */}
-								<div className="flex items-center justify-between py-4">
+								<div className="flex items-center justify-between py-4 px-3">
 									<div className="flex items-center space-x-3">
 										<img
 											src={articles.data[0].attributes.author.data.attributes.image.data.attributes.url}
