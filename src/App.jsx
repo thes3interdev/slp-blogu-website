@@ -4,7 +4,7 @@ import client from './utilities/UtilityApolloClient';
 import NavigationHeader from './components/NavigationHeader';
 import PageHome from './pages/PageHome';
 import PageArticle from './pages/PageArticle';
-import PageContacts from './pages/PageContacts';
+import PageMessage from './pages/PageMessage';
 import NavigationFooter from './components/NavigationFooter';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
 					<Routes>
 						<Route path="/" element={<PageHome />} />
 						<Route path="/articles/:slug" element={<PageArticle />} />
-						<Route path="/contacts" element={<PageContacts />} />
+						<Route path="/messages" element={<PageMessage />} />
 					</Routes>
 					<NavigationFooter />
 				</div>

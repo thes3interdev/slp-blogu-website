@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NavigationHeader = () => {
 	const navigationLinks = [
 		{ name: 'Home', link: '/' },
-		{ name: 'Contacts', link: '/contacts' },
+		{ name: 'Messages', link: '/messages' },
 	];
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

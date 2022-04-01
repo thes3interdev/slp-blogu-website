@@ -4,7 +4,7 @@ import UtilityTabTitle from '../utilities/UtilityTabTitle';
 import DisplayHeroSection from '../components/DisplayHeroSection';
 import DisplayMessageForm from '../components/DisplayMessageForm';
 
-const PageContacts = () => {
+const PageMessage = () => {
 	UtilityTabTitle('Contact Blogu | Superior Software Solutions');
 
 	return (
@@ -34,4 +34,4 @@ const PageContacts = () => {
 	);
 };
 
-export default PageContacts;
+export default PageMessage;

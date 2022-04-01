@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const NavigationFooter = () => {
 	const navigationLinks = [
 		{ name: 'Home', link: '/' },
-		{ name: 'Contacts', link: '/contacts' },
+		{ name: 'Messages', link: '/messages' },
 	];
 
 	const currentYear = new Date().getFullYear();
