@@ -2,6 +2,7 @@ import Query from '../components/QueryGQL';
 import ContactpageQuery from '../graphql/queries/ContactpageQuery';
 import UtilityTabTitle from '../utilities/UtilityTabTitle';
 import DisplayHeroSection from '../components/DisplayHeroSection';
+import DisplayMessageForm from '../components/DisplayMessageForm';
 
 const PageContacts = () => {
 	UtilityTabTitle('Contact Blogu | Superior Software Solutions');
@@ -15,9 +16,7 @@ const PageContacts = () => {
 						<div>
 							{/** hero section start */}
 							<DisplayHeroSection
-								backgroundImage={
-									contactPage.data.attributes.hero_image.data.attributes.url
-								}
+								backgroundImage={contactPage.data.attributes.hero_image.data.attributes.url}
 								title={contactPage.data.attributes.title}
 								subtitle={contactPage.data.attributes.subtitle}
 							/>
@@ -27,6 +26,10 @@ const PageContacts = () => {
 				}}
 			</Query>
 			{/** hero section display end */}
+
+			{/** message form display start */}
+			<DisplayMessageForm />
+			{/** message form display end */}
 		</div>
 	);
 };
