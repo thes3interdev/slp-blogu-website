@@ -333,7 +333,9 @@ const DisplayMessageForm = () => {
 						</div>
 						<div className="flex flex-col sm:flex-row sm:gap-8">
 							<div className="mb-5 flex-1">
-								<label>Message</label>
+								<label>
+									Message<span className="font-bold text-red-600">*</span>
+								</label>
 								<textarea
 									className="mt-1 w-full rounded-md border-2 border-gray-100 bg-gray-100 py-3 focus:border-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200 focus:ring-offset-2"
 									name="message"
